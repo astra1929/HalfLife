@@ -1,13 +1,14 @@
 @media only screen and (max-width: 600px) {
     .button {
         color: white;
-        padding: 5px 10px;
+        padding: 10px 10px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 25px;
-        border: 3px solid #0d8531;
-        border-radius: 10px;
+        background-color: rgb(16, 198, 243);
+        border: 3px solid rgb(16, 198, 243);
+        border-radius: 25px;
         cursor: pointer;
         transition: background-color 0.3s; /* добавляем плавный переход для изменения цвета фона */
     }
@@ -17,16 +18,17 @@
         font-size: 25px;
         border: 3px solid black;
         background-color: black;
-        padding: 5px 10px;
+        padding: 5px 5px;
         text-align: center;
-        display: inline-block;
-        border-radius: 10px;
+        display: none;
+        border-radius: 50px;
         cursor: pointer;
     }
 
     .arrow {
         width: 20%;
         height: 20%;
+        display: none;
     }
 
     main {
@@ -41,13 +43,14 @@
 @media only screen and (min-width: 600px){
     .button {
         color: white;
-        padding: 10px 20px;
+        padding: 20px 20px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 50px;
-        border: 3px solid #0d8531;
-        border-radius: 10px;
+        background-color: rgb(16, 198, 243);
+        border: 3px solid rgb(16, 198, 243);
+        border-radius: 50px;
         cursor: pointer;
         transition: background-color 0.3s; /* добавляем плавный переход для изменения цвета фона */
     }
@@ -59,14 +62,16 @@
         background-color: black;
         padding: 10px 20px;
         text-align: center;
-        display: inline-block;
-        border-radius: 10px;
+        display: none;
+        border-radius: 50px;
         cursor: pointer;
+        
     }
 
     .arrow {
         width: 10%;
         height: 10%;
+        display: none;
     }
 
     main {
@@ -75,16 +80,22 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20%;
-}
+    }
+
+    
 }
 .button:hover {
-    background-color: #0d8531; /* изменяем цвет фона при наведении */
+    background-color: rgb(16, 198, 243); /* изменяем цвет фона при наведении */
 }
 
 .button:active {
-    background-color: #076b25; /* изменяем цвет фона при нажатии */
+    background-color: rgb(16, 198, 243); /* изменяем цвет фона при нажатии */
 }
 
-
-
-
+body {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  user-select: none
+}
